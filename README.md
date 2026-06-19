@@ -15,6 +15,7 @@ The analysis is organized chronologically across four separate phases:
 *   **`/May20_RaceLoad`**: High-load track telemetry capturing the 14.130s 3S Challenge run.
 *   **`/May21_TrailerLoad`**: Low-speed data tracking the hurt engine climbing the trailer ramps.
 *   **`/May30_Recovery`**: Post-event startup verification back at the home garage.
+*   ** /June 9_Analysis **: Street-Driving & Lightweight Flywheel Test
 
 Each directory contains:
 1. `rooster_mayXX.wav`: The isolated, high-fidelity source audio track.
@@ -57,6 +58,27 @@ To ensure absolute scientific accuracy, the Python scripts utilize two distinct 
 
 ### 4. Recovery Phase (May 30)
 *   The script confirms a full recovery back to a healthy baseline. The wavy integer lines reappear, mapping a steady **527 RPM idle** and clean, unloaded free-revs peaking cleanly at **2,000 RPM** in the driveway.
+*   June 9 Analysis: Street-Driving & Lightweight Flywheel Test
+
+* **Environment**: Public street driving and cruising.
+* **Hardware**: Lightweight flywheel and McLeod clutch.
+* **Pipeline**: Street-specific noise-reduction script.
+
+#### Algorithmic Updates
+* **Narrowed Mask**: Restricted to 60–220 Hz.
+* **Cabin Noise**: Excluded low-end booming frequencies.
+* **Median Filter**: Added kernel size 5.
+* **Spike Removal**: Stripped out road bump transients.
+* **Parabolic Interpolation**: Calculated sub-bin peak positions.
+* **Grid Bypass**: Overcame rigid 10.76 Hz bins.
+* **Gaussian Window**: Increased to size 15.
+
+#### Telemetry Findings
+* **Engine Sweeps**: Continuous curves under 2,500 RPM.
+* **Reduced Inertia**: Steeper acceleration slopes observed.
+* **Noise Immunity**: Successful tracking through road interference.
+
+
 
 ---
 
