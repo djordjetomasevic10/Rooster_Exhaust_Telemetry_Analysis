@@ -58,7 +58,8 @@ To ensure absolute scientific accuracy, the Python scripts utilize two distinct 
 
 ### 4. Recovery Phase (May 30)
 *   The script confirms a full recovery back to a healthy baseline. The wavy integer lines reappear, mapping a steady **527 RPM idle** and clean, unloaded free-revs peaking cleanly at **2,000 RPM** in the driveway.
-*   June 9 Analysis: Street-Driving & Lightweight Flywheel Test
+*   
+### 5.    June 9 Analysis: Street-Driving & Lightweight Flywheel Test
 
 * **Environment**: Public street driving and cruising.
 * **Hardware**: Lightweight flywheel and McLeod clutch.
